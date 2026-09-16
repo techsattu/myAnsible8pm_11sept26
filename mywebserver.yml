@@ -1,0 +1,29 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: yes
+  tasks: 
+  - name: i want to install webserver on this task01 (apt-get install apache2 -y )
+    apt:
+      name: apache2
+      state: present 
+    when: ansible_os_family=="Debian"
+
+
+  - name: i want to start webserver on this task02 (service apache2 start)
+    service:
+      name: apache2
+      state: started
+    when: ansible_os_family=="Debian"
+
+  - name: i want to install webserver on ansible RedHat nodes (yum install httpd -y)
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family=="RedHat"  
+  
+  - name: i want to start websever on ansible RedHat nodes ( service httpd start)
+    service:
+       name: httpd
+       state: started
+    when: ansible_os_family =="RedHat"
