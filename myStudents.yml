@@ -1,0 +1,29 @@
+---
+- myStudents:
+  - name: anil
+    phoneNo: 9879866
+    address:
+      doorno: 85
+      street: 2nd
+      pincode: 2120123
+
+  - name: sunil
+    phoneNo: 654654
+    address:
+      doorno: 89
+      street: 2nd
+      pincode: 65165489
+
+  - name: vinit
+    phoneNo: 65465456
+    address:
+      doorno: 78
+      street: 2nd 
+      pincode: 859655998
+
+  - name: raghav
+    phoneNo: 8789465
+    address:
+      doorno: 69
+      street: 3rd
+      pincode: 25365236
