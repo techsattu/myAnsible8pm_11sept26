@@ -1,0 +1,15 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+  tasks: 
+  - name: i want to install java on Debian (apt-get install default-jdk -y )
+    apt:
+      name: "{{myjavapackondebain}}"
+      state: present 
+    when: ansible_os_family=="Debian"
+  - name: i want to install java on Redhat (yum install java-1.8.0-openjdk -y )
+    yum:
+      name: "{{myjavapackonredhat}}"
+      state: present 
+    when: ansible_os_family=="RedHat"
