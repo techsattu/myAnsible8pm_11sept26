@@ -15,3 +15,9 @@
     copy:
       src: mystaticfile
       dest: /home/maha/myfolder
+  - name: Download a file from the internet
+    get_url:
+      url: https://updates.jenkins.io/download/war/2.583/jenkins.war
+      dest: /home/maha/myfolder/jenkins.war
+      force_basic_auth: yes
+      
