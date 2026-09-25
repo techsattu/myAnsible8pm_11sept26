@@ -20,7 +20,8 @@
       url: https://updates.jenkins.io/download/war/2.583/jenkins.war
       dest: /home/maha/myfolder/jenkins.war
       force_basic_auth: yes
+ 
   - name: copy index.j2 file into the node side index
     template:
-      src: myindex.j2
-      dest: /var/www/html/index.html
+        src: myindex.j2
+        dest: /var/www/html/index.html
