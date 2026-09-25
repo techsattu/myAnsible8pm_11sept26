@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    my_variable: "Hello, World!"
+    another_variable: 42
+
+  tasks:
+  - include_tasks: myfile.yml
+  -name: i want to install webservver on ubuntu
+    apt:
+       name: apache2
+       state: present
