@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.19.19
   become: yes
   vars:
     my_variable: "Hello, World!"
