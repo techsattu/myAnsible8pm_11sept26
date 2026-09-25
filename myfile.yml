@@ -3,11 +3,7 @@
     file:
       path: /home/maha/myfolder
       state: directory
-    debug:
-      msg: "The value of my_variable is {{ my_variable }}"
-  - name: Display my_variable create a file
+  - name: Create a file
     file:
       path: /home/maha/myfolder/myfirstfile
       state: touch
-    debug:
-      msg: "The value of my_variable is {{ my_variable }}"
