@@ -1,11 +1,11 @@
 ---
+- name: create tomcat directory
+  file:
+    path: /home/maha/tomcat
+    state: directory
+  become: yes
+
 - name: download tomcat
   get_url:
-   url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.60/bin/apache-tomcat-10.1.60.tar.gz
-   dest: /homme/maha/tomcat/apache-tomcat-10.1.60.tar.gz
-
-- name: create a tomcat directory
-  file:
-    path: homme/maha/tomcat/
-    state: directory
-
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.60/bin/apache-tomcat-10.1.60.tar.gz
+    dest: /home/maha/tomcat/apache-tomcat-10.1.60.tar.gz
