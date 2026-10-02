@@ -1,7 +1,7 @@
 ---
 - name: create tomcat directory
   file:
-    path: /home/maha/tomcat
+    path: /opt/tomcat
     state: directory
   become: yes
 
