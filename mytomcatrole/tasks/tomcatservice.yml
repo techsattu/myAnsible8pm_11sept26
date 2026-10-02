@@ -1,0 +1,5 @@
+---
+- name: copy tomcat.service file to /etc/systemd/system
+  copy:
+    src: files/mytomcatservice
+    dest: /etc/systemd/system/tomcat.service

@@ -1,0 +1,10 @@
+---
+- name: update package
+  apt:
+    update_cache: yes
+
+- name: install java
+  apt:
+    name: openjdk-21-jdk
+    state: present
+
