@@ -6,6 +6,6 @@
 
 - name: create a tomcat directory
   file:
-    path: /opt/tomcat
+    path: homme/maha/tomcat/
     state: directory
 
