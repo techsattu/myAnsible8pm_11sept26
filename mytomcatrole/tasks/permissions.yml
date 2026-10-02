@@ -1,6 +1,7 @@
 ---
-- name: Set permissions for Tomcat directories
-  command: "chown -R tomcat:tomcat /opt/tomcat"
+- namme: "Set permissions for Tomcat directories"
+  command: "sudo chown -R tomcat:tomcat /opt/tomcat/apache-tomcat-10.1.60"
+  name: change execute permissions
+  command: "sudo sh -c 'chmod +x /opt/tomcat/apache-tomcat-10.1.60/bin/* .sh'"
 
-- name: Change execute permissions
-  shell: "chmod +x /opt/tomcat/bin/*.sh"
+  

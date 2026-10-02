@@ -8,6 +8,6 @@
   user:
     name: tomcat
     group: tomcat
-    home: /opt/tomcat
+    home: /opt/tomcat/apache-tomcat-10.1.60
     shell: /bin/false
     state: present

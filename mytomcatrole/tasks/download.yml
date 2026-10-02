@@ -1,27 +1,12 @@
-
 ---
 - name: create tomcat directory
-  file:
-    path: /home/maha/tomcat
-    state: directory
-  become: yes
-
-- name: create installation directory
   file:
     path: /opt/tomcat
     state: directory
   become: yes
 
-- name: download tomcat
-  get_url:
-    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.60/bin/apache-tomcat-10.1.60.tar.gz
-    dest: /home/maha/tomcat/apache-tomcat-10.1.60.tar.gz
-
-- name: extract tomcat
+- name: extract tomcat tar file
   unarchive:
     src: /home/maha/tomcat/apache-tomcat-10.1.60.tar.gz
-    dest: /opt/tomcat
+    dest: /opt/tomcat/
     remote_src: yes
-    extra_opts:
-      - --strip-components=1
-  become: yes
