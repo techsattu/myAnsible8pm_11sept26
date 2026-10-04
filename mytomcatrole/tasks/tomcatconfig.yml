@@ -10,6 +10,6 @@
     dest: /opt/tomcat/manager/META-INF/context.xml
 
 - name: copy tomcat host context file into node side
-  temlate:
+  template:
     src: tomhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
