@@ -2,5 +2,5 @@
 - name: deploy java application
   get_url:
     url: https://updates.jenkins.io/download/war/2.584/jenkins.war
-    dest: /opt/tomcat/apache-tomcat-10.1.60/webapps/mymaha-login.war
+    dest: /opt/tomcat/apache-tomcat-10.1.60/webapps/jenkins.war
     force_basic_auth: yes
